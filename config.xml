@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.helloworld"
+        version   = "1.0.0">
+
+    <name>Calculator</name>
+
+    <description>
+        Calculadora basica con acordeon incluido.
+    </description>
+
+    <author email="luedmemo@gmail.com">
+        Luis Mercado
+    </author>
+
+<!-- Customize your app and platform with the preference element. -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+
+    <icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+
+<!-- Define app splash screen for each platform. -->
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+<access origin="*"/>
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
